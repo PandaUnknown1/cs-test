@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CS 5-Mark Notes — Detailed</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📚 Computer Science 5-Mark Notes — Detailed</h1>
+
+    <!-- MODULE 1 -->
+    <section>
+      <h2>✅ Module 1: Fundamentals & Number Systems</h2>
+
+      <details>
+        <summary>1. Evolution of computing & societal impact</summary>
+        <p>
+          <strong>1st Gen (1940–56):</strong> Vacuum tubes, magnetic drums, machine code only. Big, power-hungry. Examples: ENIAC, UNIVAC.<br>
+          <strong>2nd Gen (1956–63):</strong> Transistors replaced tubes—smaller, reliable. Assembly language. IBM 1401 introduced business computing.<br>
+          <strong>3rd Gen (1964–71):</strong> Integrated Circuits—multi-tasking OS, high-level languages. IBM 360 family popularized time-sharing.<br>
+          <strong>4th Gen (1971–Present):</strong> Microprocessors on a chip. Personal computers, GUIs (e.g. Apple II, IBM PC).<br>
+          <strong>5th Gen (Present & Beyond):</strong> AI & quantum computing—natural language processing, machine learning, qubits.
+        </p>
+      </details>
+
+      <details>
+        <summary>2. Number conversions</summary>
+        <p><strong>a) Decimal 97 → Binary:</strong> 97÷2→48 r1, 48÷2→24 r0, … → 1100001</p>
+        <p><strong>b) Binary 1101 → Decimal:</strong> 1×2³+1×2²+0×2¹+1×2⁰=8+4+0+1=13</p>
+        <p><strong>c) Hex 3F → Binary:</strong> 3→0011, F→1111 → 00111111</p>
+      </details>
+
+      <details>
+        <summary>3. Binary arithmetic (add, sub, mul)</summary>
+        <p>
+          <strong>Addition:</strong> 1011+0110=10001 (carry as in decimal)<br>
+          <strong>Subtraction:</strong> Use 2’s complement (invert bits + add 1).<br>
+          <strong>Multiplication:</strong> Shift-and-add method (like long multiplication).
+        </p>
+      </details>
+
+      <details>
+        <summary>4. RAM vs ROM vs HDD vs SSD</summary>
+        <table>
+          <tr><th>Type</th><th>Volatile?</th><th>Speed</th><th>Use</th><th>Cost/GB</th></tr>
+          <tr><td>RAM</td><td>Yes</td><td>Very fast</td><td>Running apps</td><td>High</td></tr>
+          <tr><td>ROM</td><td>No</td><td>Fast (read)</td><td>Firmware</td><td>Low</td></tr>
+          <tr><td>HDD</td><td>No</td><td>Slow</td><td>Bulk storage</td><td>Low</td></tr>
+          <tr><td>SSD</td><td>No</td><td>Very fast</td><td>OS & apps</td><td>Medium</td></tr>
+        </table>
+      </details>
+
+      <details>
+        <summary>5. CPU architecture & functionality</summary>
+        <ul>
+          <li><strong>Control Unit:</strong> Fetch–decode–execute cycle</li>
+          <li><strong>ALU:</strong> Arithmetic & logic operations</li>
+          <li><strong>Registers:</strong> Small fast storage (PC, IR, ACC)</li>
+          <li><strong>Cache:</strong> L1/L2 for frequent data</li>
+          <li><strong>Buses:</strong> Data, address, control lines</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>6. Operating system types</summary>
+        <p>
+          <strong>Batch OS:</strong> No user interaction (early IBM).<br>
+          <strong>Time-sharing:</strong> Multiple users share CPU (UNIX).<br>
+          <strong>Real-time:</strong> Guaranteed response (VxWorks).<br>
+          <strong>Network OS:</strong> Manages network resources (Novell).<br>
+          <strong>Mobile OS:</strong> Smartphones (Android, iOS).
+        </p>
+      </details>
+
+      <details>
+        <summary>7. CLI vs GUI</summary>
+        <table>
+          <tr><th>Feature</th><th>CLI</th><th>GUI</th></tr>
+          <tr><td>Interface</td><td>Text commands</td><td>Windows/icons</td></tr>
+          <tr><td>Learning curve</td><td>Steep</td><td>Gentle</td></tr>
+          <tr><td>Speed</td><td>Fast (power users)</td><td>Slower</td></tr>
+          <tr><td>Resources</td><td>Low</td><td>High</td></tr>
+        </table>
+      </details>
+
+      <details>
+        <summary>8. Primary vs secondary memory</summary>
+        <table>
+          <tr><th>Aspect</th><th>Primary</th><th>Secondary</th></tr>
+          <tr><td>Volatility</td><td>Volatile</td><td>Non-volatile</td></tr>
+          <tr><td>Speed</td><td>Fast</td><td>Slower</td></tr>
+          <tr><td>Capacity</td><td>Low</td><td>High</td></tr>
+          <tr><td>Access</td><td>Direct</td><td>Via I/O system</td></tr>
+        </table>
+      </details>
+
+      <details>
+        <summary>9. SSD vs HDD—case study factors</summary>
+        <ul>
+          <li><strong>Speed:</strong> SSD boots/apps faster</li>
+          <li><strong>Durability:</strong> SSD no moving parts</li>
+          <li><strong>Cost:</strong> HDD cheaper per GB</li>
+          <li><strong>Power:</strong> SSD more efficient</li>
+          <li><strong>Use:</strong> Media storage (HDD), OS/apps (SSD)</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>10. Computer Science vs IT</summary>
+        <table>
+          <tr><th>Aspect</th><th>Computer Science</th><th>Information Technology</th></tr>
+          <tr><td>Focus</td><td>Algorithms, theory</td><td>Applications, infrastructure</td></tr>
+          <tr><td>Role</td><td>Developer, researcher</td><td>Admin, support</td></tr>
+          <tr><td>Nature</td><td>Scientific</td><td>Applied</td></tr>
+        </table>
+      </details>
+
+      <details>
+        <summary>11. Four common number systems</summary>
+        <ul>
+          <li><strong>Binary (base 2):</strong> 0–1</li>
+          <li><strong>Octal (base 8):</strong> 0–7</li>
+          <li><strong>Decimal (base 10):</strong> 0–9</li>
+          <li><strong>Hexadecimal (base 16):</strong> 0–9, A–F</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>12. Features of binary, octal & hexadecimal</summary>
+        <table>
+          <tr><th>System</th><th>Base</th><th>Digits</th><th>Use</th></tr>
+          <tr><td>Binary</td><td>2</td><td>0–1</td><td>Machine code</td></tr>
+          <tr><td>Octal</td><td>8</td><td>0–7</td><td>Short binary</td></tr>
+          <tr><td>Hex</td><td>16</td><td>0–9,A–F</td><td>Memory addresses</td></tr>
+        </table>
+      </details>
+
+      <details>
+        <summary>13. Purpose of hexadecimal</summary>
+        <p>Compact binary representation, easy grouping (4 bits), memory addresses, color codes (#FF00FF).</p>
+      </details>
+
+      <details>
+        <summary>14. Importance of conversions</summary>
+        <p>Translating human-readable (decimal) to machine (binary/hex) is vital for addressing, debugging, bitwise ops.</p>
+      </details>
+
+      <details>
+        <summary>15. Volatile vs non-volatile memory</summary>
+        <ul>
+          <li><strong>Volatile:</strong> RAM—data lost on power off.</li>
+          <li><strong>Non-volatile:</strong> ROM/HDD/SSD—retains data.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>16. Scanner & OCR</summary>
+        <p><strong>Scanner:</strong> Digitizes paper to image.<br>
+           <strong>OCR:</strong> Converts image text → editable text (used in archiving).</p>
+      </details>
+
+      <details>
+        <summary>17. Input & output devices</summary>
+        <ul>
+          <li><strong>Input:</strong> Keyboard, mouse, microphone, scanner.</li>
+          <li><strong>Output:</strong> Monitor, printer, speaker.</li>
+          <li><strong>Hybrid:</strong> Touchscreen.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>18. Evolution: Abacus → Quantum</summary>
+        <p>Abacus → Mechanical calculators (Pascaline) → Vacuum tubes (ENIAC) → Transistors → ICs → Microprocessors → Smartphones → Quantum computers (qubits, superposition).</p>
+      </details>
+
+      <details>
+        <summary>19. Compare 1st–4th gen computers</summary>
+        <table>
+          <tr><th>Gen</th><th>Tech</th><th>Size</th><th>Lang</th><th>Speed</th></tr>
+          <tr><td>1st</td><td>Vacuum tubes</td><td>Huge</td><td>Machine</td><td>Slow</td></tr>
+          <tr><td>2nd</td><td>Transistors</td><td>Large</td><td>Assembly</td><td>Faster</td></tr>
+          <tr><td>3rd</td><td>ICs</td><td>Medium</td><td>High-lvl</td><td>Faster</td></tr>
+          <tr><td>4th</td><td>Microprocessors</td><td>Small</td><td>High-lvl</td><td>Very fast</td></tr>
+        </table>
+      </details>
+
+      <details>
+        <summary>20. Storage device types & features</summary>
+        <ul>
+          <li><strong>Primary:</strong> RAM, Cache</li>
+          <li><strong>Secondary:</strong> HDD, SSD</li>
+          <li><strong>Optical:</strong> CD/DVD</li>
+          <li><strong>Flash:</strong> Pen drives</li>
+          <li><strong>Cloud:</strong> Remote, internet-based</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>21. Convert (111101101)₂ → Octal & (536)₈ → Hex</summary>
+        <p><strong>Binary to Octal:</strong> Group by 3: 111 101 101 → 7 5 5 → 755₈</p>
+        <p><strong>Octal to Decimal:</strong> 5×8²+3×8+6=350 → Hex: 350÷16=21 r14 (E) → 15E₁₆</p>
+      </details>
+
+      <details>
+        <summary>22. PC structure & components</summary>
+        <ul>
+          <li>Motherboard (bus, sockets)</li>
+          <li>CPU (ALU, CU, registers)</li>
+          <li>RAM, Cache</li>
+          <li>Storage (HDD/SSD)</li>
+          <li>PSU, GPU, peripherals</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>23. Steps: Decimal → Binary & Hex</summary>
+        <p>
+          <strong>To binary:</strong> Repeated divide by 2, write remainders reverse.<br>
+          <strong>To hex:</strong> Repeated divide by 16, map remainders 10–15→A–F.
+        </p>
+      </details>
+
+      <details>
+        <summary>24. CD-ROM vs CD-R vs CD-RW</summary>
+        <table>
+          <tr><th>Type</th><th>Writable?</th><th>Use</th></tr>
+          <tr><td>CD-ROM</td><td>No</td><td>Software/media distribution</td></tr>
+          <tr><td>CD-R</td><td>Once</td><td>Archiving, backups</td></tr>
+          <tr><td>CD-RW</td><td>Rewritable</td><td>Reusable storage</td></tr>
+        </table>
+      </details>
+    </section>
+
+    <!-- MODULE 2 & 3 here (unchanged) -->
+
+    <!-- MODULE 4 -->
+    <section>
+      <h2>🌐 Module 4: Computer Networks & Command-Line Operations</h2>
+
+      <details>
+        <summary>1. Define computer network; explain nodes & links</summary>
+        <p>
+          A <strong>computer network</strong> interconnects devices (nodes) via physical or wireless links.
+          <ul>
+            <li><strong>Nodes:</strong> PCs, servers, printers.</li>
+            <li><strong>Links:</strong> Ethernet cables, fiber optics, Wi-Fi.</li>
+            <li>Data travels in packets—switches forward within LAN, routers between networks.</li>
+          </ul>
+        </p>
+      </details>
+
+      <details>
+        <summary>2. Network topologies (bus, star, mesh)</summary>
+        <table>
+          <tr><th>Topology</th><th>Sketch</th><th>Pros</th><th>Cons</th></tr>
+          <tr><td>Bus</td><td>———</td><td>Low cost</td><td>Collisions, single point failure</td></tr>
+          <tr><td>Star</td><td>•—■—•</td><td>Easy management</td><td>Hub failure</td></tr>
+          <tr><td>Mesh</td><td>All↔All</td><td>High reliability</td><td>Complex, costly</td></tr>
+        </table>
+      </details>
+
+      <details>
+        <summary>3. LAN vs MAN vs WAN</summary>
+        <table>
+          <tr><th>Type</th><th>Area</th><th>Speed</th><th>Example</th></tr>
+          <tr><td>LAN</td><td>Building</td><td>1 Gbps+</td><td>Office Wi-Fi</td></tr>
+          <tr><td>MAN</td><td>City</td><td>10 Mbps–10 Gbps</td><td>Campus network</td></tr>
+          <tr><td>WAN</td><td>Global</td><td>1 Mbps–100 Gbps</td><td>Internet</td></tr>
+        </table>
+      </details>
+
+      <details>
+        <summary>4. OSI model & layer functions</summary>
+        <table>
+          <tr><th>Layer</th><th>Name</th><th>Function</th></tr>
+          <tr><td>7</td><td>Application</td><td>User apps (HTTP, FTP)</td></tr>
+          <tr><td>6</td><td>Presentation</td><td>Encryption/compression</td></tr>
+          <tr><td>5</td><td>Session</td><td>Connection mgmt</td></tr>
+          <tr><td>4</td><td>Transport</td><td>TCP/UDP—reliability</td></tr>
+          <tr><td>3</td><td>Network</td><td>IP routing</td></tr>
+          <tr><td>2</td><td>Data Link</td><td>MAC addressing, frames</td></tr>
+          <tr><td>1</td><td>Physical</td><td>Cables, signals</td></tr>
+        </table>
+      </details>
+
+      <details>
+        <summary>5. IPv4 vs IPv6</summary>
+        <table>
+          <tr><th>Aspect</th><th>IPv4</th><th>IPv6</th></tr>
+          <tr><td>Address</td><td>32-bit (4.3 B)</td><td>128-bit (3.4×10¹⁸)</td></tr>
+          <tr><td>Config</td><td>DHCP/static</td><td>Stateless autoconfig</td></tr>
+          <tr><td>Security</td><td>Optional IPsec</td><td>Mandatory IPsec</td></tr>
+        </table>
+      </details>
+
+      <details>
+        <summary>6. TCP vs UDP with examples</summary>
+        <ul>
+          <li><strong>TCP:</strong> Connection-oriented, reliable (web, email).</li>
+          <li><strong>UDP:</strong> Connectionless, low overhead (streaming, DNS).</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>7. Five network devices & functions</summary>
+        <ul>
+          <li><strong>Hub:</strong> Broadcasts to all ports (Layer 1).</li>
+          <li><strong>Switch:</strong> Forwards by MAC (Layer 2).</li>
+          <li><strong>Router:</strong> Routes by IP (Layer 3).</li>
+          <li><strong>Bridge:</strong> Connects LAN segments (Layer 2).</li>
+          <li><strong>Gateway:</strong> Protocol translation.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>8. HTTP, HTTPS & FTP comparison</summary>
+        <table>
+          <tr><th>Protocol</th><th>Port</th><th>Security</th><th>Use</th></tr>
+          <tr><td>HTTP</td><td>80</td><td>None</td><td>Web pages</td></tr>
+          <tr><td>HTTPS</td><td>443</td><td>TLS/SSL</td><td>Secure web</td></tr>
+          <tr><td>FTP</td><td>20/21</td><td>Plain</td><td>File transfer</td></tr>
+        </table>
+      </details>
+
+      <details>
+        <summary>9. Basic Linux CLI commands</summary>
+        <table>
+          <tr><th>Task</th><th>Command</th></tr>
+          <tr><td>List files</td><td><code>ls -l</code></td></tr>
+          <tr><td>Create dir</td><td><code>mkdir folder</code></td></tr>
+          <tr><td>Change dir</td><td><code>cd /path</code></td></tr>
+          <tr><td>Copy file</td><td><code>cp src dest</code></td></tr>
+          <tr><td>Remove file</td><td><code>rm file</code></td></tr>
+        </table>
+      </details>
+
+      <details>
+        <summary>10. Significance of scripting in CLI</summary>
+        <ul>
+          <li>Automates repetitive tasks</li>
+          <li>Combines commands with logic</li>
+          <li>Ensures reproducibility</li>
+          <li>Essential for DevOps/admin</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>11. Protocols: name four with functions</summary>
+        <ul>
+          <li><code>HTTP</code>: Web traffic</li>
+          <li><code>FTP</code>: File transfers</li>
+          <li><code>SMTP</code>: Email sending</li>
+          <li><code>DNS</code>: Name resolution</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>12. Firewall: what & why important</summary>
+        <p>A firewall filters network traffic per security rules—blocks unauthorized access, prevents attacks.</p>
+      </details>
+
+      <details>
+        <summary>13. Static vs dynamic IP addressing</summary>
+        <ul>
+          <li><strong>Static:</strong> Manually assigned—fixed, used by servers.</li>
+          <li><strong>Dynamic:</strong> Assigned by DHCP—flexible for clients.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>14. Transmission media with examples</summary>
+        <ul>
+          <li>Twisted pair (Ethernet)</li>
+          <li>Coaxial (cable TV)</li>
+          <li>Fiber optic (backbone links)</li>
+          <li>Wireless (Wi-Fi, microwave)</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>15. Network scalability techniques</summary>
+        <ul>
+          <li>Hierarchical design (core/distribution/access)</li>
+          <li>Subnetting</li>
+          <li>Load balancing</li>
+          <li>Modular expansion</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>16. Topology advantages/disadvantages (bus, star, mesh)</summary>
+        <ul>
+          <li><strong>Bus:</strong> Low cost; collision-prone.</li>
+          <li><strong>Star:</strong> Easy fault isolate; hub failure.</li>
+          <li><strong>Mesh:</strong> Redundant; expensive.</li>
+        </ul>
+      </details>
+    </section>
+
+    <!-- MODULE 5 -->
+    <section>
+      <h2>🧠 Module 5: Advanced Topics & Ethical Considerations</h2>
+
+      <details>
+        <summary>1. Cybersecurity threats & best practices</summary>
+        <ul>
+          <li><strong>Malware:</strong> Viruses, trojans, ransomware.</li>
+          <li><strong>Phishing:</strong> Social-engineering attacks.</li>
+          <li><strong>DoS/DDoS:</strong> Flooding services.</li>
+          <li><strong>MITM:</strong> Eavesdropping/altering traffic.</li>
+          <li><strong>SQL injection:</strong> DB compromise.</li>
+        </ul>
+        <p><strong>Defenses:</strong> Firewalls, antivirus, encryption, MFA, patching, user training.</p>
+      </details>
+
+      <details>
+        <summary>2. AI ethics (bias, transparency)</summary>
+        <p>
+          <strong>Bias:</strong> Training data may reflect social prejudices—leads to unfair outcomes.<br>
+          <strong>Transparency:</strong> “Black-box” models lack explainability—hard to audit decisions.<br>
+          <strong>Solutions:</strong> Diverse datasets, explainable AI, ethical guidelines, regular audits.
+        </p>
+      </details>
+
+      <details>
+        <summary>3. Quantum computing principles & applications</summary>
+        <ul>
+          <li><strong>Qubits:</strong> Superposition of 0 & 1.</li>
+          <li><strong>Entanglement:</strong> Correlated qubits.</li>
+          <li><strong>Quantum gates:</strong> Operations on qubits.</li>
+        </ul>
+        <p><strong>Applications:</strong> Cryptography (Shor’s algorithm), optimization (Grover’s), molecular simulation, quantum ML.</p>
+      </details>
+
+      <details>
+        <summary>4. Bioinformatics & healthcare transformation</summary>
+        <p>
+          Combines biology, CS, statistics to analyze biological data:<br>
+          • Genomic sequencing for disease markers.<br>
+          • Personalized medicine via patient genomics.<br>
+          • Drug discovery simulations.<br>
+          • Epidemiology & outbreak tracking.
+        </p>
+      </details>
+
+      <details>
+        <summary>5. Edge computing vs cloud computing</summary>
+        <table>
+          <tr><th>Aspect</th><th>Cloud</th><th>Edge</th></tr>
+          <tr><td>Location</td><td>Remote data centers</td><td>Local devices/gateways</td></tr>
+          <tr><td>Latency</td><td>Higher</td><td>Low</td></tr>
+          <tr><td>Bandwidth</td><td>Heavy network use</td><td>Saves bandwidth</td></tr>
+          <tr><td>Use cases</td><td>Big data, backups</td><td>IoT, AR/VR, autonomous cars</td></tr>
+        </table>
+      </details>
+
+      <details>
+        <summary>6. Responsible AI practices</summary>
+        <ul>
+          <li>Fairness: no discrimination.</li>
+          <li>Accountability: clear ownership of decisions.</li>
+          <li>Transparency: explainable models.</li>
+          <li>Privacy: data protection.</li>
+          <li>Robustness: secure against attacks.</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>7. Hashing & its role in security</summary>
+        <p>
+          <strong>Hashing:</strong> Maps data → fixed-size digest.<br>
+          Properties: deterministic, irreversible, collision-resistant.<br>
+          Uses: password storage, integrity checks, digital signatures.
+        </p>
+      </details>
+
+      <details>
+        <summary>8. Classical vs quantum computing</summary>
+        <table>
+          <tr><th>Feature</th><th>Classical</th><th>Quantum</th></tr>
+          <tr><td>Unit</td><td>Bit (0/1)</td><td>Qubit (0&1)</td></tr>
+          <tr><td>Speed</td><td>Transistor-limited</td><td>Potential exponential</td></tr>
+          <tr><td>App</td><td>General-purpose</td><td>Cryptography, simulation</td></tr>
+        </table>
+      </details>
+
+      <details>
+        <summary>9. Ethics in cybersecurity</summary>
+        <p>
+          Ensures privacy, data protection, responsible disclosure, legal compliance, and user trust.
+        </p>
+      </details>
+    </section>
+  </div>
+</body>
+</html>
